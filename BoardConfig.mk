@@ -13,7 +13,10 @@ BOARD_KERNEL_CMDLINE := ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=3
 
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 2048
+BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01E00000
+BOARD_CUSTOM_BOOTIMG_MK   := device/xiaomi/cancro/mkbootimg.mk
+
 TARGET_PREBUILT_KERNEL := device/xiaomi/cancro/kernel
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x01000000
